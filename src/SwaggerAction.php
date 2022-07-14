@@ -41,9 +41,9 @@ class SwaggerAction {
         $swagger->setHost($host);
         $swagger->setSchemes([$request->getUri()->getScheme()]);
         foreach ($routes as $route) {
-            if (Util::isSwaggerRoute($route)) {
-                $swagger = Util::addRouteToSwagger($swagger, $route);
-            }
+            // if (Util::isSwaggerRoute($route)) {
+            $swagger = Util::addRouteToSwagger($swagger, $route);
+            // }
         }
         foreach ($definitions as $definitionClassName) {
             $name = array_pop(explode("\\", $definitionClassName));
