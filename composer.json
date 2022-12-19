@@ -1,5 +1,5 @@
 {
-  "name": "jonhermansen/slim-swagger",
+  "name": "mijohansen/slim-swagger",
   "description": "Simpler way to hook a swagger api into slim-framework.",
   "keywords": [
     "slim",
